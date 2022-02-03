@@ -85,7 +85,7 @@ if __name__ == "__main__":
     SI = Variable('Siena', domainTuscany)
     GR = Variable('Grosseto', domainTuscany)
 
-    print('Instanziate region as variables...')
+    print('Instanziate province as variables...')
     tuscany.addVariable(MS)
     tuscany.addVariable(LU)
     tuscany.addVariable(PI)
@@ -147,7 +147,7 @@ if __name__ == "__main__":
     SI = Variable('Siena', domainTuscany)
     GR = Variable('Grosseto', domainTuscany)
 
-    print('Instanziate region as variables...')
+    print('Instanziate province as variables...')
     tuscany.addVariable(MS)
     tuscany.addVariable(LU)
     tuscany.addVariable(PI)
@@ -222,7 +222,7 @@ if __name__ == "__main__":
             else:
                 grid["X{0}{1}".format(i, j)] = Variable('X' + str(i) + str(j), domainSudoku)
 
-    print('Instanziate region as variables...')
+    print('Instanziate variables...')
     for i in range(1, row + 1):
         for j in range(1, row + 1):
             sudoku.addVariable(grid['X' + str(i) + str(j)])
@@ -290,7 +290,7 @@ if __name__ == "__main__":
             else:
                 grid["X{0}{1}".format(i, j)] = Variable('X' + str(i) + str(j), domainSudoku)
 
-    print('Instanziate region as variables...')
+    print('Instanziate variables...')
     for i in range(1, row + 1):
         for j in range(1, row + 1):
             sudoku.addVariable(grid['X' + str(i) + str(j)])
